@@ -1,0 +1,572 @@
+.addthis_custom_sharing{
+   float:right;
+   margin: 6px 48px 0 0;
+}
+
+body .wrapper{
+    width: 100%;
+}
+
+.sidebar .questexadvertisementblock.top-content.mobile .image-holder,.article-listing-page .questexadvertisementblock.top-content.mobile .image-holder{
+    width:auto;
+	text-align:center;
+}
+
+body a:hover{
+    text-decoration: none;
+}
+
+.individual-comment{
+    min-height: 20px;
+    margin:4px 0px 4px 0px;
+    padding: 2px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.comments .addcomm{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.custom-page #comments{
+    display: none;
+}
+
+.comments #comments{
+    display:block;
+}
+
+/*Listing fromn amol B*/
+.main-content .layout{
+/*    padding:0;*/
+
+}
+#pagetitle h2{
+
+    font-size: 40px;
+    padding: 11px 0 0;
+    text-transform: uppercase;
+}
+.article-block .image-holder .category-tag {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.article-block .image-holder .category-tag a {
+    background: none repeat scroll 0 0 rgba(166, 33, 33, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: #fff;
+    display: inline-block;
+    font: 400 14px/38px Oswald,sans-serif;
+    height: 38px;
+    margin: 0 auto;
+    padding: 0 26px;
+    text-transform: uppercase;
+}
+
+/*.article-block .image-holder {
+    float: left;
+    height: 281px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 375px;
+}*/
+.latest > .layout {
+    padding: 35px 0 0 !important;
+}
+.actions-block .layout {
+    border-top: 1px solid #e7e7e7;
+    padding: 35px 0;
+}
+.more-btn {
+    background: none repeat scroll 0 0 #a62121;
+    border: 2px solid #a62121;
+    border-radius: 15px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 132px;
+}
+
+.more-btn span svg {
+    display: inline-block;
+    fill: #fff;
+    height: 10px;
+    padding-left: 5px;
+    width: 15px;
+}
+
+.more-btn span {
+    color: #fff;
+    display: inline-block;
+    font: 400 14px/40px Oswald,sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.more-btn:hover {
+    background: none repeat scroll 0 0 #fff;
+}
+.more-btn:hover span {
+    color: #a62121;
+}
+
+.more-btn:hover span svg {
+    fill: #a62121;
+}
+
+/*added for image caption*/
+.content .post .post-image.wrap_text{
+    width:50%;
+	float:left;
+margin-right:12px;
+margin-bottom:0;
+}
+
+/*hack for articel detail sidebar*/
+.at-resp-share-element a .label{
+    color:white;font-weight: bold;
+}
+
+/*bottom sharing buttons*/
+.addthis_responsive_sharing{
+    float:left;
+}
+
+.comments-amount{
+    margin-top:10px;
+}
+
+        
+@media ( max-width:767px) {
+body .tabs-nav li a span{
+		font-size: 14px;
+	}
+/*added march 25 2015*/
+body .questexshowimage{    
+   width:100%;
+   }
+
+   .questexshowimage{
+       text-align:center;
+   }
+
+   body .questexshowissue{
+       width:100%;
+   }
+body .issue-list li{  width:100%; height:auto;  }
+/**/
+
+body div.recipies-list ul li div.image-holder img {
+  height: 256px;
+}
+.site-search .recipies-list .layout h2{
+		text-align: left;
+	}
+.empty-content-tag{
+		display: none;
+	}
+
+body ul#recipe-searched-list li .image-holder img{
+   height:267px;
+}
+ 
+body .recipies-list ul li .image-holder img{
+           height:256px;
+       } 
+ body .recipes-page .addthis_custom_sharing{
+       margin-top: 5px;
+   }
+
+.search-results .article-block .image-holder {
+width:100% !important;
+float:none;
+height:auto !important;
+}
+
+    .content .meta .comments-amount{width:135px;}
+    .addthis_responsive_sharing{text-align: center;}
+body .addthis_custom_sharing{margin: 6px 0px 0 0;}
+    body .addthis_32x32_style .at4-icon,
+    body .addthis_32x32_white_style .at4-icon,
+    body .at-32x32 {
+    width: 20px;height: 20px;line-height: 18px;background-size: 18px !important;}
+    body .addthis_responsive_sharing{
+    float:none;
+    }
+    body .add2{
+    display:block;
+    }
+    body .add1 .image-holder, body .add2 .image-holder{
+       display: block;
+float: none;
+width: 100%;
+margin: 10px 0 25px 0;
+border-top: 1px solid #E7E7E7;
+padding-top: 25px;
+    }
+    /*.sidebar .questexadvertisementblock:first-child{display: none;}*/
+.content .post .post-image.wrap_text {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+}
+}
+
+@media (max-width: 977px) {
+body .sticky-parent .questexadvertisementblock:first-child { margin-left: 0; position: static !important; }
+body .sticky-parent .questexadvertisementblock:first-child { position: static; top:0; margin-top: 20px; float: left; width: 300px;  }
+    body .sticky-parent .questexadvertisementblock:first-child div .image-holder {  height: 250px; overflow: hidden; padding: 0; margin-top: 20px; }
+body .recipies-list ul li div.image-holder img{
+           height:313px;
+       }
+    /*.sidebar .questexadvertisementblock:first-child{display: none;}*/
+    .search-results .article-block .image-holder{
+        width:371px;
+        height:281px;
+    }
+    body .add2{
+    display:block;
+    }
+   /* .sidebar .questexadvertisementblock{display: none;}*/
+
+    .add1 .image-holder,.add2 .image-holder{
+        float: right;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 55px;
+    }
+
+}
+
+.add2{
+    display:none;
+}
+
+.sidebar .most-popular .at4-recommended .at4-recommended-vertical .at4-recommended-item{
+   width: 100% !important;
+   overflow: hidden !important;
+   border-bottom: 1px solid #e7e7e7 !important;
+   padding: 7px 0 !important;
+   height:auto !important;
+margin:0px!important;
+}
+
+.sidebar .most-popular .at4-recommended .at4-recommended-vertical .at4-recommended-item:hover{
+   background-color: #f7f7f7 !important;
+}
+
+.sidebar .most-popular .at4-recommended .at4-recommended-vertical .at4-recommended-item small{
+   display: none;
+}
+
+.sidebar .most-popular .at4-recommended .at4-recommended-vertical .at4-recommended-item .at4-recommended-item-caption
+.at-h4 a{
+font-weight: 700 !important;
+color: #a62121 !important;
+font-size: 14px !important;
+line-height: 20px !important;
+padding-top: 4px !important;
+text-decoration: none !important;
+}
+
+.at-h4{
+text-decoration: none !important;
+}
+ .sidebar .most-popular .at4-recommended-container.at4-recommended-vertical{
+   padding: 0px !important;
+}
+
+/*****************Hack for recipe detail page*****************************/
+.recipes-page .addthis_custom_sharing{
+   float:right;
+   margin: 0px 0px 0px 0px;
+   width: auto;
+}
+.recipes-page .social-shares{
+   float:right;
+   width:auto;
+}
+
+.recipes-page .content .recipes-block .recipie-description-wrapper{
+  position: relative;
+  top: 0%;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.featured-recipies .base-block .hover .more-button{
+bottom: 20px;
+margin-left: -89px;
+width: 178px;
+top: auto;
+}
+
+.recipes-page .meta .tags li{font-size:16px;}
+
+/********/
+.site-search #pagetitle{
+    display: none;
+}
+
+.author .photo-holder img{
+height:100%;
+}
+
+/*.article-detail .main-content h2,.recipe-detail .main-content h2,.main-content h2.capitalize-title{
+text-transform:capitalize;
+}*/
+
+.recipe-detail .main-content h2{
+  text-transform:none; 
+}
+
+.author-live-date{
+    float:left;
+    width:100%;
+}
+
+/*Added for recipe list*/
+.recipies-list ul li .image-holder img{
+   height:320px;
+}
+#recipe-searched-list li .image-holder img{
+   height:395px;
+}
+/*PC*/
+@media (max-width: 1217px) {
+
+   body .recipies-list ul li .image-holder img{
+       height:267px;
+   }
+	body #recipe-searched-list li .image-holder img{
+   height:315px;
+}
+}
+
+body .content .sponsored-block .sponsored-by p { 
+  text-transform: none;  
+}
+
+.author-block .author-info a.facebook.custom-fb{
+	background: url(/web/20151024144203im_/http://www.nightclub.com/files/ncb/newhomepage_images/facebook.jpg) left center no-repeat;
+	height:26px;
+}
+
+.author-block .author-info a.facebook.custom-fb:hover{
+	background: url(/web/20151024144203im_/http://www.nightclub.com/files/ncb/newhomepage_images/facebook-over.jpg) left center no-repeat;
+	height:26px;
+}
+
+.author-block .author-info a.twitter.custom-tw{
+	background: url(/web/20151024144203im_/http://www.nightclub.com/files/ncb/newhomepage_images/twitter.jpg) left center no-repeat;
+	height:26px;
+}
+
+.author-block .author-info a.twitter.custom-tw:hover{
+	background: url(/web/20151024144203im_/http://www.nightclub.com/files/ncb/newhomepage_images/twitter-over.jpg) left center no-repeat;
+	height:26px;
+}
+.author-block .author-info p.empty-content-tag{
+padding-bottom:21px;
+}
+body .sticky-parent .questexadvertisementblock:first-child { position: absolute; top:0; margin-top: 20px; }
+body .sticky-parent .questexadvertisementblock:first-child div .image-holder { padding-bottom: 535px; }
+.sidebar .questexadvertisementblock:first-child.top-content{background: none;}
+body .content .sponsored-block .sign-up-block p {  font-size: 14px !important;  line-height: 24px !important;padding-bottom:0px !important;}
+body .content .sponsored-block .sign-up-block a { font-weight: initial; }
+.site-search .main-content h2 { text-transform: capitalize; }
+.basic-one-col .main-content .layout h2.title-custom,.basic-two-col .main-content .layout h2.title-custom{padding-top:28px;}
+/*Added on march 25 2015*/
+.issue-list li{
+    float:left;
+    width:33%;
+    text-align: center;
+    height:280px;
+}
+
+.issue-year{
+    font-size: 22px;
+    font-weight: bold;
+}
+.issue-more{
+    float:left;
+    width: 100%;
+    color:#b32929;
+    font-size: 16px;
+    margin-bottom: 8px;
+   font-family:"Oswald",sans-serif;
+}
+.issue-year hr{
+	border-color: #e7e7e7;
+}
+.questexshowimage{
+   float:right;
+   width:20%;
+}
+
+.questexshowissue{
+   float:left;
+   width:80%;
+}
+
+.issue-morelink-holder{
+   width:100%;
+}
+
+.wysiwyg .questexshowissue_morelink{
+   color:#b32929;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 18px;
+   text-decoration: none;
+font-family: "Oswald",sans-serif;
+}
+
+.questexshowissue .rows{
+   width:100%;
+   float:left;
+   margin-top:6px;
+}
+
+.wysiwyg .questexshowissue_title{
+   color:#1d1d1d;
+   font-size: 18px;
+}
+
+
+
+.bars{
+   margin: 0px;
+height: 1.8em;
+border: 1px solid #DEDBCB;
+background: none repeat scroll 0% 0% #F5F5F0;
+}
+
+.poll-options{
+   font-weight: bold;
+   font-size: 16px;
+   color: #333;
+}
+
+.pollResult {
+   display: block;
+   height: 1.8em;
+   background: none repeat scroll 0% 0% #E7AEB4;
+   float: left;
+   margin-right: 10px;
+}
+
+.poll-content .option{
+   margin-bottom: 8px;
+}
+
+.publish_this_image{
+   float:right;
+   margin-left: 10px;
+}
+
+.questexshowissue_teaser{
+   font-size:18px;
+   font-weight: bold;
+}
+
+.questexshowissue_viewmore{
+   float:left;
+   width:100%;
+}
+/*Added on march 27*/
+body .tabs-nav a,body .tabs-nav a span{
+    background: none;
+}
+
+.tabs-nav li.tabs-selected a{
+    background-color:#fff;
+    border:1px solid #b32929;
+}
+
+.tabs-nav li.tabs-selected a span{
+    color: #b32929;
+}
+
+.tabs-nav li a{
+    background-color: #b32929;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;        
+    margin: 0px 1px 0px 1px;
+    height:39px;	
+}
+
+.tabs-nav li a span{
+    color:#fff;
+    font: 400 18px Oswald,sans-serif;
+    text-transform:uppercase;	
+}
+
+body .more-stories .block-header h2{
+text-transform:uppercase;
+}
+.recipie .rec-column.wysiwyg a,.recipie .rec-column p a,.recipie-description-wrapper.wysiwyg .wrapp a{
+text-decoration:underline;
+}
+.wysiwyg ul.social-shares li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+/*CSS for log in page */
+#user-login-form,.loginfield .form-item,body #signupdiv td,body #errmsg{ color: #575757; font-family: "magneta", serif; font-size:14px; } #user-login-form .login_text{ font-size:16px; font-family: "magneta", serif; } .loginfield a,.moreSeparator{ color: #b32929; font-size: 16px; font-family: "Oswald",sans-serif; } .moreSeparator{ margin:0px 5px 0px 5px; } #user-login-form input{ font-size:14px !important; } #user-login-form .inputButton{ width:45px; }
+/*CSS log in ends*/
+
+/*CSS for sign up form*/
+.user-register-form .form-item,.user-register-form .form-item label,.user-register-form .form-item input,.user-register-form .form-item .description{
+   width:100%;
+   float:left;
+   font-family: "magneta", serif;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.user-register-form .form-item{
+   margin:4px 0px 4px 0px;
+}
+
+.user-register-form input[type="submit"]{
+   width:50px;
+   height: 20px;
+}
+
+.user-register-form{
+   margin-top: 10px;
+}
+/*End sign up form */
+
+
+/*
+     FILE ARCHIVED ON 14:42:03 Oct 24, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:28 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1261.79
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.059
+  cdx.remote: 0.04
+  esindex: 0.004
+  LoadShardBlock: 103.685 (3)
+  PetaboxLoader3.datanode: 116.785 (4)
+  CDXLines.iter: 15.578 (3)
+  load_resource: 123.718
+  PetaboxLoader3.resolve: 101.646
+*/

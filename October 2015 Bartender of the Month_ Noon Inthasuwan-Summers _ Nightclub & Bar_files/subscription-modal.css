@@ -1,0 +1,206 @@
+.subscription-modal * {
+  box-sizing: border-box;
+}
+
+.subscription-modal {
+  display: none;
+}
+
+.subscription-modal.display {
+  display: block;
+}
+
+.subscription-modal .modal-content-wrapper {
+  width: 320px;
+}
+
+.modal-content {
+  padding: 0;
+}
+
+@media (max-height: 450px) {
+  .modal-content .promo-image {
+    display: none;
+  }
+}
+
+.modal-content .promo-image {
+  width: 250px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.modal-content .promo-image img {
+  width: 100%;
+}
+
+.modal-content .mktoForm {
+  padding: 10px;
+}
+
+.modal-content .mktoForm h3,
+.modal-content .mktoForm label {
+  color: #ffffff;
+}
+
+.modal-content .mktoForm h3 {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content .mktoForm label {
+  font-size: 16px;
+}
+
+.mktoForm .mktoField {
+  float: none;
+}
+
+.modal-content .mktoForm .mktoButtonRow {
+  width: 100%;
+  text-align: center;
+}
+
+.subscription-modal {
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0.3s ease-out 0s;
+          transition: opacity 0.3s ease-out, visibility 0.3s ease-out 0s;
+}
+
+.subscription-modal.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  z-index: 9992;
+}
+
+.subscription-modal .modal-content-wrapper {
+  background: #000;
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+      -ms-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 995;
+}
+
+.subscription-modal.visible .modal-content-wrapper {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.subscription-modal .modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 990;
+}
+
+.subscription-modal .btn-close {
+  background: url("https://web.archive.org/web/20150814224450im_/http://www.zazenweb.com/ncb/interstitial/img/close-button.png") no-repeat center;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  height: 43px;
+  width: 48px;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
+}
+
+.subscription-modal .btn-close:hover {
+  opacity: 1;
+}
+
+.subscription-modal a,
+.subscription-modal object,
+.subscription-modal input,
+.subscription-modal input:focus,
+.subscription-modal textarea:focus,
+.subscription-modal button:focus {
+  outline: none !important;
+}
+
+.modal-content .mktoGutter,
+.modal-content .mktoOffset,
+.modal-content .mktoForm .mktoGutter,
+.modal-content .mktoForm .mktoAsterix,
+.modal-content .mktoForm .mktoOffset {
+  display: none !important;
+}
+
+.modal-content .mktoForm button.mktoButton {
+  margin-left: -120px;
+}
+
+.mktoForm .mktoRadioList > label,
+.mktoForm .mktoCheckboxList > label {
+  margin-top: -16px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 660px) {
+  .modal-content .promo-image {
+    width: 300px;
+    height: 290px;
+    text-align: left;
+    margin: 0;
+    float: left;
+  }
+  .modal-content .mktoForm h3 {
+    margin: 0 0 20px 0;
+  }
+  .modal-content .mktoForm {
+    float: right;
+  }
+  .modal-content .mktoForm .mktoButtonRow {
+    margin-top: 20px;
+  }
+  .subscription-modal .modal-content-wrapper {
+    width: 660px;
+  }
+  .subscription-modal .btn-close {
+    right: -15px;
+    bottom: -15px;
+  }
+}
+/*
+     FILE ARCHIVED ON 22:44:50 Aug 14, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:22 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 137.063
+  exclusion.robots: 0.102
+  exclusion.robots.policy: 0.093
+  RedisCDXSource: 0.738
+  esindex: 0.009
+  LoadShardBlock: 117.187 (3)
+  PetaboxLoader3.resolve: 189.056 (3)
+  PetaboxLoader3.datanode: 77.392 (4)
+  CDXLines.iter: 15.356 (3)
+  load_resource: 170.341
+*/

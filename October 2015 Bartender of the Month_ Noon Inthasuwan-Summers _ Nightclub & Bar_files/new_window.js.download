@@ -1,0 +1,91 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(document).ready(function(){
+	if($('a[href="https://web.archive.org/web/20151029025753/http://www.gpsmaniac.com"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://www.gpsmaniac.com"]').attr('target', '_blank');
+	}
+	if($('a[href="https://web.archive.org/web/20151029025753/http://www.gpsmaniac.com/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://www.gpsmaniac.com/"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://techtalk.sidt.gpsworld.com"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://techtalk.sidt.gpsworld.com"]').attr('target', '_blank');
+	}
+	if($('a[href="https://web.archive.org/web/20151029025753/http://techtalk.sidt.gpsworld.com/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://techtalk.sidt.gpsworld.com/"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://adquest.questex.com/media-brand/GPS%20World"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://adquest.questex.com/media-brand/GPS%20World"]').attr('target', '_blank');
+	}
+	if($('a[href="https://web.archive.org/web/20151029025753/http://adquest.questex.com/media-brand/GPS%20World/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://adquest.questex.com/media-brand/GPS%20World/"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://wiki.geospatial-solutions.com"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://wiki.geospatial-solutions.com"]').attr('target', '_blank');
+	}
+	if($('a[href="https://web.archive.org/web/20151029025753/http://wiki.geospatial-solutions.com/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://wiki.geospatial-solutions.com/"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://maproom.geospatial-solutions.com/PNOnline"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://maproom.geospatial-solutions.com/PNOnline"]').attr('target', '_blank');
+	}
+	if($('a[href="https://web.archive.org/web/20151029025753/http://maproom.geospatial-solutions.com/PNOnline/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://maproom.geospatial-solutions.com/PNOnline/"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://questex-sub.halldata.com/site/QTX001048GRland/init.do"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://questex-sub.halldata.com/site/QTX001048GRland/init.do"]').attr('target', '_blank');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/https://ksa1.keywordsearchalert.com/Questex/GPSWorld/KSAWeb/SubscriberRegistration.php"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/https://ksa1.keywordsearchalert.com/Questex/GPSWorld/KSAWeb/SubscriberRegistration.php"]').attr('target', '_blank');
+	}	
+	/* Added below code to render external links in a same window Request ID : 44002 */
+	if($('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/index.htm"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/index.htm"]').attr('target', '_self');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/suppliers/"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/suppliers/"]').attr('target', '_self');
+	}
+	
+	if($('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/suppliers/loginForm.htm"]')){
+		$('a[href="https://web.archive.org/web/20151029025753/http://directory.nightclub.com/suppliers/loginForm.htm"]').attr('target', '_self');
+	}
+});
+
+}
+/*
+     FILE ARCHIVED ON 02:57:53 Oct 29, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:20 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 132.483
+  exclusion.robots: 0.131
+  exclusion.robots.policy: 0.121
+  cdx.remote: 0.076
+  esindex: 0.011
+  LoadShardBlock: 100.79 (3)
+  PetaboxLoader3.datanode: 102.47 (4)
+  CDXLines.iter: 22.856 (3)
+  load_resource: 60.139
+  PetaboxLoader3.resolve: 45.389
+*/

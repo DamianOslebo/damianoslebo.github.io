@@ -1,0 +1,484 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+//$(window).load(function () {
+jQuery(document).ready(function ($) {
+if($('h1.tagged-changed').length){
+var text = $('h1.tagged-changed').html();
+text= text.trim();
+if(text==''){
+    $('#pagetitle h1.tagged-changed').css('display','none');
+} 
+} 
+
+var mobile_menu = $('#submenu ul.menu').first();
+        $(document).on('click', '.menu-fake-item', function() {
+            if($(this).hasClass('active')){
+              $(this).removeClass('active');
+              mobile_menu.slideUp();
+            }else{
+              $(this).addClass('active');
+              mobile_menu.slideDown();
+            }
+        });
+
+
+/* $('.main-nav .menu li a').on("touchstart", function (e) {
+        "use strict"; //satisfy the code inspectors             
+        var link = $(this); //preselect the link       
+	 var linktype = 0;
+        if ($(this).parent().hasClass('menuparent')) {
+            linktype = 1;
+        }else{
+e.preventDefault();
+	return;
+} 
+        var ids = $(this).attr('class');
+        var menuid = ids.split('-');
+        var menu_mlid = menuid[0];
+        var parent_mlid = menuid[1];
+        var block_id = $('#hidden-menu-block-id').attr('val');
+        if (link.hasClass('demo-class')) {
+            e.preventDefault();
+            return true;
+        } else {
+            link.addClass("demo-class");
+            $('.main-nav .menu li a').not(this).removeClass("demo-class");
+            var id = '#menu-' + parent_mlid + ' .tab-data';
+//$('.menudropdown-'+parent_mlid+' .dropdown-tabs .holder ul').css('height',parseInt(350));
+            $.ajax({
+                type: 'POST',
+                url: '/xmlrpc.php',
+                dataType: 'xml',
+                data: '<methodCall><methodName>GetRecentDataForMenu</methodName><params><value>' + menu_mlid + '</value></params><params><value>' + block_id + '</value></params><params><value>' + linktype + '</value></params></methodCall>',
+                success: function (data) {
+                    var recentData = '';
+                    // alert(recentData);
+                    var recentData = $(data).find('value').text();
+                    // $(id).css('display','block');
+                    // alert(recentData);
+                    if (recentData !== '') {
+                        $(id).html(recentData);
+var tabdataheight=$('.menudropdown-'+parent_mlid+' .dropdown-tabs .tab-data').outerHeight();
+           var liNum=$('.menudropdown-'+parent_mlid+' .dropdown-tabs .holder ul li').length;
+           var listheight=parseInt(liNum * 50);
+var htt=$('.menudropdown-'+parent_mlid).outerHeight();
+           $('.menudropdown-'+parent_mlid+' .dropdown-tabs .holder ul').css('height',parseInt(htt));
+           if(listheight < tabdataheight){
+               $('.menudropdown-'+parent_mlid+' .dropdown-tabs .holder ul').css('height',parseInt(tabdataheight));
+           }else{
+               $('.menudropdown-'+parent_mlid+' .dropdown-tabs .holder ul').css('height',parseInt(50 * liNum));
+           }
+
+                    }
+                }
+            });
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });    
+*/
+function initIosFixFixed() {
+        $.fn.mobileFix = function (options) {
+            var $parent = $(this),
+                    $fixedElements = $(options.fixedElements);
+
+            $(document).on('focus', options.inputElements, function (e) {
+                $parent.addClass(options.addClass);
+            }).on('blur', options.inputElements, function (e) {
+                $parent.removeClass(options.addClass);
+
+                // Fix for some scenarios where you need to start scrolling
+                setTimeout(function () {
+                    $(document).scrollTop($(document).scrollTop())
+                }, 1);
+            });
+
+            return this; // Allowing chaining
+        };
+
+// Only on touch devices
+        if (Modernizr.touch) {
+            $("body").mobileFix({// Pass parent to apply to
+                inputElements: "input,textarea,select", // Pass activation child elements
+                addClass: "fixfixed" // Pass class name
+            });
+        }
+    }
+
+    /* commented as we do not need this logic
+     * pix= new Array('images/temp/temp1.png','images/temp/article1.jpg');
+     pic= new Array();
+     function preloadpix(){
+     for(i=0;i<=pix.length-1;i++){
+     pic[i]= new Image();
+     pic[i].src=pix[i]
+     }
+     }
+     preloadpix();*/
+
+//TABS
+//if(/iPhone|iPod|Android|iPad/.test(window.navigator.platform)){
+    ///  $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    //  $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );    
+    //return false;  
+//}
+//TABS  
+
+    /*$(".dropdown-tabs").tabs({
+        event: "mouseover"
+    });*/
+
+
+//SEARCH in MAIN NAVIGATION 
+    function changeFontSize() {
+        //console.log('fiiiiiii');
+        if (isHeaderFixed) {
+            //console.log('header is fixed');
+            if ($('.opened-search').length > 0) {
+                console.log('f1');
+                if ($(window).width() >= 1217) {
+                    $('.main-nav .menu li a.menu-menuparent').css({fontSize: '12px'});
+                } else {
+                    $('.main-nav .menu li a.menu-menuparent').css({fontSize: '10px'});
+                }
+            } else {
+                console.log('f2');
+                if ($(window).width() >= 1217) {
+                    $('.main-nav .menu li a.menu-menuparent').css({fontSize: '12px'});
+                } else {
+                    $('.main-nav .menu li a.menu-menuparent').css({fontSize: '12px'});
+                }
+            }
+        } else {
+            //console.log('header is not fixed');
+        }
+    }
+    function setDefaultFontSize() {
+        console.log('start default');
+        if (isHeaderFixed) {
+            if ($(window).width() >= 1217) {
+                $('.main-nav .menu li a.menu-menuparent').css({fontSize: '14px'});
+                //$('.main-nav .menu li a').css({fontSize: '12px'});
+            } else {
+                $('.main-nav .menu li a.menu-menuparent').css({fontSize: '12px'});
+                //$('.main-nav .menu li a.menu-menuparent').css({fontSize: '10px'});
+            }
+
+        } else {
+            if ($(window).width() >= 1217) {
+                $('.main-nav .menu li a.menu-menuparent').css({fontSize: '18px'});
+            } else {
+                $('.main-nav .menu li a.menu-menuparent').css({fontSize: '14px'});
+            }
+        }
+    }
+    ;
+
+    $(window).scroll(function () {
+        changeFontSize();
+        if ($(window).width() < 977) {
+            if (!isHeaderFixed) {
+                $('#menu').removeClass('toggled-nav');
+            } else {
+                if ($('#menu').hasClass('active')) {
+                    $('#menu').addClass('toggled-nav');
+                }
+            }
+        }
+    });
+
+    $(document).click(function (event) {
+        if ($(event.target).closest(".search-item-menu input.search").length)
+            return;
+
+        $('.search-item-menu').css('width', '24');
+        $('.search-item-menu input.search').css('border', '').css('background', 'none').css('width', '0');
+        $('.menu').removeClass('opened-search');
+        setTimeout(setDefaultFontSize, 400);
+
+        event.stopPropagation();
+    });
+
+    $(document).on("tap", function (event) {
+        if ($(event.target).closest(".search-item-menu input.search").length)
+            return;
+
+        $('.search-item-menu').css('width', '24');
+        $('.search-item-menu input.search').css('border', '').css('background', 'none').css('width', '0').css('padding', '0');
+        $('.menu').removeClass('opened-search');
+        setTimeout(setDefaultFontSize, 400);
+        event.stopPropagation();
+    });
+
+    $('.search-item-menu svg').click(function () {
+        console.log('svg click');
+        if ($('.opened-search').length > 0) {
+            if ($(event.target).closest(".search-item-menu input.search").length)
+                return;
+            if ($(window).width() < 768) {
+                console.log('svg click < 768');
+                $('.header-content .logo').css('left', '50%');
+                $('#menu').css('margin-left', '0');
+                $('.main-nav .logo2 ').css('left', '50%');
+
+            }
+            $('.search-item-menu').css('width', '24');
+            $('.search-item-menu input.search').css('border', '').css('background', 'none').css('width', '0').css('padding', '0');
+
+            $('.menu').removeClass('opened-search');
+            setTimeout(setDefaultFontSize, 400);
+            event.stopPropagation();
+        } else {
+            console.log('else');
+            if ($(window).width() < 768) {
+                console.log('else < 768');
+                $('#menu').css('margin-left', '-60px');
+                $('.header-content .logo').css('left', '-15px');
+                $('.main-nav .logo2').css('left', '-15px');
+            }
+            $('.search-item-menu input.search').css('border', '1px solid #dcdcdc').css('background', '#fff').css('width', '100%').css('padding', '0px 12px 0px 44px');
+            $('.search-item-menu').css('width', '200').css('margin-right', '0');
+            $('.menu').addClass('opened-search');
+            changeFontSize();
+            return false;
+
+        }
+    });
+
+    $('.menu-button').click(function () {
+        if ($(window).width() < 977 && $(window).width() > 768) {
+            if (isHeaderFixed) {
+                $('#menu').toggleClass('toggled-nav');
+            }
+        } else if ($(window).width() < 768) {
+            $('#menu').toggleClass('toggled-nav');
+        }
+
+        $('.side-nav').toggleClass('active');
+        $('.mobile-wrapper').toggleClass('active');
+        $('#menu').toggleClass('active');
+        $('.main-nav').toggleClass('active');
+    });
+
+
+//HERO MOBILE SLIDER
+    $('.gallery .flexslider').flexslider({
+        animation: 'fade'
+    });
+
+    $('.gallery .flexslider-mobile').flexslider({
+        animation: 'slide'
+    });
+
+    $('.gallery .flexslider-products').flexslider({
+        animation: 'slide'
+    });
+
+// FEATURED RECEPIES 
+    $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        responsive: true,
+        minSlides: 1,
+        maxSlides: 4,
+        slideWidth: 297,
+        slideMargin: 1,
+        captions: true
+    });
+// PRODUCT WATCH 
+    $('.bxslider1').bxSlider({
+        mode: 'horizontal',
+        responsive: true,
+        minSlides: 1,
+        maxSlides: 4,
+        slideWidth: 282,
+        slideMargin: 30,
+        captions: true
+    });
+
+
+
+// EDITOR PICS   
+
+    if ($(window).width() > 767) {
+        var setHeight = $(".box2 .image-block img").height();
+        $(".box1, .box3").height(setHeight);
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() > 767) {
+            var setHeight = $(".box2 .image-block img").height();
+            $(".box1, .box3").height(setHeight);
+        }
+    });
+if (($(window).width() >977 && $(window).width() < 1217)) { 
+  var setHeight2 = $(".content .recipes-block .image-holder").height();
+  var height1 = $(".content .recipes-block .recipie-description-wrapper .wrapp").height();   
+  if(setHeight2 > height1){
+      $(".content .recipes-block .recipie-description-wrapper").height(setHeight2 + 30);  
+  }else {
+      $(".content .recipes-block .recipie-description-wrapper").height(height1);  
+  }
+} else {
+$(".content .recipes-block .recipie-description-wrapper").css("height", "auto");
+}
+
+$( window ).resize(function() {
+if (($(window).width() >977 && $(window).width() < 1217)) { 
+  
+  if($('#submenu .menu').css('display')=='none'){
+      $('#submenu .menu').css('display','block');
+     } 
+
+  var setHeight2 = $(".content .recipes-block .image-holder").height();
+  var height1 = $(".content .recipes-block .recipie-description-wrapper .wrapp").height();   
+  if(setHeight2 > height1){
+      $(".content .recipes-block .recipie-description-wrapper").height(setHeight2 + 30);  
+  }else {
+      $(".content .recipes-block .recipie-description-wrapper").height(height1);  
+  }
+} else {
+if($('#submenu .menu').css('display')=='block'){
+      $('#submenu .menu').css('display','none');
+     }
+
+$(".content .recipes-block .recipie-description-wrapper").css("height", "auto");
+}
+});
+
+    if ($(window).width() < 768) {
+        $(document).click(function (event) {
+            if ($(event.target).closest(".search-item-menu input.search").length)
+                return;
+            $('.header-content .logo').css('left', '50%');
+            $('#menu').css('margin-left', '');
+            $('.main-nav .logo2 ').css('left', '50%');
+            event.stopPropagation();
+        });
+
+        /*
+         $(document).on("tap",function(event) {
+         if ($(event.target).closest(".search-item-menu input.search").length) return;
+         $('.header-content .logo').css('left','50%');
+         $('#menu').css('margin-left','');
+         $('.main-nav .logo2').css('left','50%');    
+         event.stopPropagation();
+         });
+         */
+        $('.search-item-menu svg').click(function () {
+
+            //$('#menu').css('margin-left','-60px');
+            //$('.header-content .logo').css('left','-15px');
+            //$('.main-nav .logo2').css('left','-15px');    
+        });
+    }
+    else {
+        $('.header-content .logo ').css('left', '50%');
+        $('#menu').css('margin-left', '');
+        $('.main-nav .logo2 ').css('left', '50%');
+        $('.search-item-menu svg').click(function () {
+            $('.header-content .logo').css('left', '50%');
+            $('#menu').css('margin-left', '');
+            $('.main-nav .logo2 ').css('left', '50%');
+        });
+    }
+function adjustAlignment(){
+var imht=$('.hero-block.base-block.large .image-holder').height();
+//var contentht=$('.hero-block.base-block.large .content-block').height();
+var cotnentheight=0;
+$(".hero-block.base-block.large .content-block > *").each(function () {
+ cotnentheight += $(this).height();
+});
+var changedMargin=parseInt((imht-cotnentheight)/2) ;
+$('.hero-block.base-block.large .content-block h3').css('margin-top',changedMargin);
+}
+
+    $(window).resize(function () {
+
+        changeFontSize();
+
+        if ($(window).width() < 768) {
+            $('.header-content .logo ').css('left', '');
+            $(document).click(function (event) {
+                if ($(event.target).closest(".search-item-menu input.search").length)
+                    return;
+                $('.header-content .logo').css('left', '50%');
+                $('#menu').css('margin-left', '');
+                $('.main-nav .logo2 ').css('left', '50%');
+                event.stopPropagation();
+            });
+
+            $(document).on("tap", function (event) {
+                if ($(event.target).closest(".search-item-menu input.search").length)
+                    return;
+                $('.header-content .logo').css('left', '50%');
+                $('#menu').css('margin-left', '');
+                $('.main-nav .logo2').css('left', '50%');
+                event.stopPropagation();
+            });
+
+            $('.search-item-menu svg').click(function () {
+                //$('#menu').css('margin-left','-60px');
+                //$('.header-content .logo').css('left','-15px');
+                //$('.main-nav .logo2').css('left','-15px');    
+            });
+        }
+        else {
+            $('.header-content .logo ').css('left', '');
+            $('#menu').css('margin-left', '');
+            $('.main-nav .logo2 ').css('left', '50%');
+            $('.search-item-menu svg').click(function () {
+                $('.header-content .logo').css('left', '');
+                $('#menu').css('margin-left', '');
+                $('.main-nav .logo2 ').css('left', '50%');
+            });
+        }
+    });
+
+// EDITOR PICS FONT SIZE
+    $(".picks .content-block h3").fitText(1.1, {minFontSize: '16px', maxFontSize: '25px'});
+    $(".picks .content-block em").fitText(1.1, {minFontSize: '12px', maxFontSize: '14px'});
+    $(".picks .content-block .author p").fitText(1, {minFontSize: '7px', maxFontSize: '18px'});
+    $(".picks .image-block .author p").fitText(1, {minFontSize: '7px', maxFontSize: '18px'});
+    $(".picks .content-block .content-wrapper > p").fitText(1, {minFontSize: '10px', maxFontSize: '17px'});
+    $(".picks.box2 .content-block .more-button").fitText(1, {minFontSize: '12px', maxFontSize: '18px'});
+
+    var isiPad = navigator.userAgent.toLowerCase().indexOf("ipad");
+    if (isiPad > -1) {
+//        $('.main-nav .search-item-menu ').css('display', 'none');
+    }
+adjustAlignment();
+});        
+
+
+
+}
+/*
+     FILE ARCHIVED ON 15:07:07 Oct 28, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:18 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 80.701
+  exclusion.robots: 0.101
+  exclusion.robots.policy: 0.093
+  RedisCDXSource: 2.997
+  esindex: 0.009
+  LoadShardBlock: 53.38 (3)
+  PetaboxLoader3.datanode: 49.574 (4)
+  CDXLines.iter: 21.183 (3)
+  load_resource: 49.537
+  PetaboxLoader3.resolve: 33.07
+*/

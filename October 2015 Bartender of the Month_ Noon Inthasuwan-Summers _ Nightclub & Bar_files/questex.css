@@ -1,0 +1,347 @@
+html, body {
+	background-color:#FFFFFF;
+	width:100%;
+    vertical-align:top;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#1d1d1d;
+    height: 100%;
+    border: 0;
+	margin:0px auto;
+}
+/* common css start */
+#mainbody, #mainbody_inner{
+	width:100%;
+}
+#mainbody_inner{
+	margin-left:0px;
+}
+.common_width{
+	width:100%;
+	height:auto;
+	float:left;
+	background-color:#1d1d1d;
+}
+.center{
+	text-align:center;
+}
+.relative{
+	position:relative;
+}
+.hr_line{
+	border-bottom:1px solid #FFF;
+}
+.full_width{
+	width:100%;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.auto{
+	width:auto;
+}
+.padding_left{
+	padding:5px;
+}
+.gray{
+	color:#1d1d1d;
+}
+.red{
+	color:#a72120;
+}
+.bold{
+	font-weight:bold;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+a.b_menu_link{
+	color:#FFF;
+	text-decoration:none;
+}
+a.b_menu_link:hover{
+	color:#FFF;
+	text-decoration:underline;
+}
+header, section, footer{
+	width:100%;
+	height:auto;
+	float:left;
+}
+#headerregion, #bottbutts, #container{
+	width:100%;
+	margin:0px auto;
+}
+.beadcrumb-link, .dttime, #tabsTop, #welcomebox{
+	display:none;
+}
+/* common css end */
+.topad{
+	width:50%;
+	float:right;
+	height:auto;
+}
+#headerregion{
+	border-top:2px solid #a62122;;
+}
+#main_wrapper{
+	width:100%;
+	height:auto;
+	float:left;
+}
+.wrapper{
+	width:1200px;
+	margin:0px auto;
+	height:auto;
+}
+.wrapper:before, #wrapper:after{
+	content:"";
+	display:table;
+}
+.wrapper:after{
+	clear:both;
+}
+header{
+	width:100%;
+	height:auto;
+	float:left;
+	background-color:#FFF;
+}
+header .top_ads{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	padding:5px 0px;
+	border-bottom:1px solid #a72120;
+}
+header .top_logo_wrapper{
+	width:100%;
+	height:auto;
+	float:left;
+	border-top:1px solid #a72120;
+}
+header .top_logo_lft{
+	width:80%;
+	height:auto;
+	float:left;
+	margin:5px 0px;
+}
+header .top_logo_rht{
+	width:20%;
+	height:auto;
+	float:right;
+	text-align:right;
+}
+#header{
+	width:1200px;
+	background:transparent;
+}
+/* main menu css start */
+.nav_class{
+	width:986px; 
+	background-color:#fff !important; 
+	border:1px solid #1d1d1d; 
+	top:-37px !important;
+}
+#ncb_nav_wrap{
+	height:auto;
+	width:100%;
+	float:left;
+	text-transform:uppercase;
+	background-color:#1d1d1d;
+	position:relative;
+}
+
+#ncb_nav_wrap ul{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	z-index:100;
+}
+#ncb_nav_wrap ul a{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	font-weight:500;
+	font-size:16px;
+	/*line-height:32px;*/
+	padding:20px 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+#ncb_nav_wrap ul li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+#ncb_nav_wrap ul li.current-menu-item{
+	background:#a72120;
+}
+#ncb_nav_wrap ul li:hover{
+	background:#a72120;
+	color:#FFF;
+}
+#ncb_nav_wrap ul li ul li:hover{
+	/*background-color:#000;*/
+	color:#FFFFFF;
+}
+#ncb_nav_wrap ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:-96px;
+	background:#1d1d1d;
+	padding:0;
+}
+#ncb_nav_wrap ul ul li{
+	float:none;
+	width:200px;
+	color:#fff;
+}
+#ncb_nav_wrap ul ul li a{	
+	color:#FFF;
+}
+#ncb_nav_wrap ul ul li a:hover{	
+	/*color:#000;*/
+}
+#ncb_nav_wrap ul ul a{
+	line-height:120%;
+	padding:10px 15px
+}
+/*#ncb_nav_wrap ul ul a:hover{
+	color:#FFF;
+	background-color:#1d1d1d;
+}*/
+#ncb_nav_wrap ul ul ul{
+	top:0;
+	left:100%;
+}
+#ncb_nav_wrap ul li:hover > ul{
+	display:block;
+}
+.list-block{
+	width:96%;
+	height:auto;
+	float:left;
+	padding:0px 2%
+}
+.list-block-img{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+}
+.list-block-txt{
+	width:100%;
+	height:auto;
+	float:left;
+	color:#1d1d1d;
+	text-align:center;
+}
+.ncb_search{
+	width:23px;
+	height:23px;
+	position:absolute;
+	right:5px;
+	top:6px;
+}
+/* main menu css end */
+/* for footer css start */
+.footer_ads{
+	width:100%;
+	height:auto;
+	float:left;
+	background-color:#FFF;
+	padding:20px 0px;
+}
+.fotter_bg{
+	background-color:#1d1d1d;
+}
+.footer_main{
+	width:100%;
+	float:left;
+	height:auto;
+	background-color:#1d1d1d;
+	color:#FFFFFF;
+}
+.footer_main:first-child{
+	padding-top:30px;
+}
+.footer_main:last-child{
+	padding-bottom:30px;
+}
+.footer_inner:first-child{
+	width:40%;
+}
+.footer_inner{
+	width:20%;
+	height:auto;
+	float:left;
+}
+.footer_inner p{
+	padding:5px 0px;
+}
+.more{
+	color:#FFF;
+	font-weight:bold;
+	font-size:16px;
+	padding-top:0px !important;
+	text-transform:uppercase;
+}
+.more1{
+	margin-top:20px;
+}
+.more2{
+	color:#FFF;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.input_email{
+	width:321px;
+	height:31px;
+	border:none;
+	background:#FFF;	
+	padding:5px 10px;
+	color:#4b4b4b;
+	font-style:italic;
+}
+.submit_email{
+	width:42px;
+	height:43px;
+	border:none;
+	margin-left:-4px;
+	background:url(https://web.archive.org/web/20151024004037im_/http://staging.nightclub.com/files/ncb/blocks/footer/4/send_email_btn.jpg) no-repeat 0px 0px #a62222;
+}
+/* for footer css end */
+
+/*
+     FILE ARCHIVED ON 00:40:37 Oct 24, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:17 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 77.473
+  exclusion.robots: 0.101
+  exclusion.robots.policy: 0.094
+  RedisCDXSource: 2.585
+  esindex: 0.01
+  LoadShardBlock: 55.767 (3)
+  PetaboxLoader3.datanode: 176.532 (5)
+  CDXLines.iter: 16.927 (3)
+  load_resource: 230.432 (2)
+  PetaboxLoader3.resolve: 100.654 (2)
+*/

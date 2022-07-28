@@ -1,0 +1,49 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+
+  _bizo_data_partner_id = "1308";
+
+(function() {
+  var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";
+  b.async = true;
+  b.src = (window.location.protocol === "https:" ? "https://web.archive.org/web/20151028145718/https://sjs" : "https://web.archive.org/web/20151028145718/http://js") + ".bizographics.com/insight.min.js";
+  s.parentNode.insertBefore(b, s);
+})();
+
+
+
+
+}
+/*
+     FILE ARCHIVED ON 14:57:18 Oct 28, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:19 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 795.168
+  exclusion.robots: 0.104
+  exclusion.robots.policy: 0.095
+  cdx.remote: 0.073
+  esindex: 0.009
+  LoadShardBlock: 65.24 (3)
+  PetaboxLoader3.datanode: 72.361 (4)
+  CDXLines.iter: 25.057 (3)
+  load_resource: 49.059
+  PetaboxLoader3.resolve: 34.912
+*/

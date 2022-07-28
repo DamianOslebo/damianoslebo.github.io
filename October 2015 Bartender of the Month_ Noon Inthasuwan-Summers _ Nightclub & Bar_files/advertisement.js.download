@@ -1,0 +1,76 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+  var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                '//web.archive.org/web/20151028144802/http://www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+
+googletag.cmd.push(function() {
+
+var w = window.innerWidth;
+  googletag.defineSlot('/298443/qtx.ncb', [300, 250], 'r300x250-0').addService(googletag.pubads()).setTargeting("pos", "0");
+  googletag.defineSlot('/298443/qtx.ncb', [300, 250], 'r300x250-1').addService(googletag.pubads()).setTargeting("pos", "1");
+  googletag.defineSlot('/298443/qtx.ncb', [300, 600], 'r300x600-0').addService(googletag.pubads()).setTargeting("pos", "0");
+  googletag.defineSlot('/298443/qtx.ncb', [300, 600], 'r300x600-1').addService(googletag.pubads()).setTargeting("pos", "1");
+if (w>969)
+{
+  googletag.defineSlot('/298443/qtx.ncb', [[970, 250], [970, 90], [728, 90]], 'header-billboard').addService(googletag.pubads()).setTargeting("pos", "0");
+  googletag.defineSlot('/298443/qtx.ncb', [728, 90], 'footer-leaderboard').addService(googletag.pubads()).setTargeting("pos", "1");
+}
+if (w>727 && w<970)
+{
+  googletag.defineSlot('/298443/qtx.ncb', [728, 90], 'header-billboard').addService(googletag.pubads()).setTargeting("pos", "0");
+  googletag.defineSlot('/298443/qtx.ncb', [728, 90], 'footer-leaderboard').addService(googletag.pubads()).setTargeting("pos", "1");
+}
+if (w<728)
+{
+  googletag.defineSlot('/298443/qtx.ncb', [320, 50], 'header-billboard').addService(googletag.pubads()).setTargeting("pos", "0");
+  googletag.defineSlot('/298443/qtx.ncb', [320, 50], 'footer-leaderboard').addService(googletag.pubads()).setTargeting("pos", "1");
+}
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+
+
+
+}
+/*
+     FILE ARCHIVED ON 14:48:02 Oct 28, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:04:20 Jul 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 174.165
+  exclusion.robots: 0.107
+  exclusion.robots.policy: 0.097
+  cdx.remote: 0.07
+  esindex: 0.01
+  LoadShardBlock: 141.506 (3)
+  PetaboxLoader3.resolve: 330.361 (3)
+  PetaboxLoader3.datanode: 146.723 (5)
+  CDXLines.iter: 23.34 (3)
+  load_resource: 344.641 (2)
+*/
